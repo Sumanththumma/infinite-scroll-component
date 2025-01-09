@@ -6,10 +6,9 @@
   <title>Infinite scroll</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="flex-col px-10 py-10">
-    <button id="callmain" class=" bg-black text-white px-4 py-3 text-lg font-semibold rounded-lg hover:text-xl duration-150 ">Unsplash API</button>
-    <h1 class="text-2xl">Images:</h1>
-    <div id="img-container" class="w-full flex gap-10  py-5 px-5 overflow-x-auto">
+<body class=" flex flex-col px-10 py-10 items-center justify-center bg-slate-700" id="body" onscroll="fetchmore()" >
+    <button id="callmain" class=" bg-black text-white px-4 py-3 text-lg font-semibold rounded-lg hover:text-xl duration-150 "> Fetch Unsplash API</button>
+    <div id="img-container" class="w-full h-auto overflow-auto flex flex-col py-5 justify-center items-center mt-5">
         
     </div>
     <script src="index.js"></script>
